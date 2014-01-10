@@ -12,7 +12,7 @@ require './lib/loan'
 		offers.system_total
 
 		loan = Loan.new(loan_amount_string)
-		abort(loan.correct_amount?) if loan.correct_amount? 
+		abort(loan.incorrect_amount?) if loan.incorrect_amount? 
 		abort(loan.market_has_sufficient?(offers)) if loan.market_has_sufficient?(offers) 
 
 		offers.sorted_pool
@@ -20,9 +20,17 @@ require './lib/loan'
 		loan.total_repayment
 
 		puts "Requested amount: £#{ARGV[1]}"
-		puts "Rate: #{(loan.rate).round(2)}%"
-		puts "Monthly repayment: #{sprintf("£%5.2f", loan.monthly_repayment)}"
-		puts "Total repayment: #{sprintf("£%5.2f", loan.total_repayment)}"
+		puts "Rate: #{percentage(loan.rate)}%"
+		puts "Monthly repayment: #{pretty(loan.monthly_repayment)}"
+		puts "Total repayment: #{pretty(loan.total_repayment)}"
+	end
+
+	def pretty numbers
+		sprintf("£%5.2f", numbers)
+	end
+
+	def percentage rate
+		(rate * 100).round(1)
 	end
 
 end

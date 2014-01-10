@@ -1,3 +1,18 @@
+This is a loan calculator I built in response to the technical test below.
+
+To run this program, add the directory to the contents of the PATH variable (this allows you to run the application without the "./" prefix):
+
+    $ export PATH="$PATH:~/technical-tests/developer-test"
+
+Then run the program:
+
+    $ quote [CSV file] [Loan amount]
+
+For example:
+
+    $ quote market.csv 2000
+
+
 # Technical Test
 
 There is a need for a rate calculation system allowing prospective borrowers to
