@@ -1,0 +1,7 @@
+source 'https://rubygems.org'
+
+# Cucumber extension for testing command line applications written in any programming language. 
+gem 'aruba'
+
+
+ruby '2.0.0'

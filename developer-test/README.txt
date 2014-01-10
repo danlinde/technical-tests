@@ -1,8 +1,14 @@
-This is a loan calculator I built in response to the technical test below.
+This is a __loan calculator__ I built in response to the technical test below.
 
-To run this program, add the directory to the contents of the PATH variable (this allows you to run the application without the "./" prefix):
+#Setup
 
-    $ export PATH="$PATH:~/technical-tests/developer-test"
+To setup this program, please run:
+
+    $ bundle install
+
+Add the directory to the contents of the PATH variable (this allows you to run the application without the "./" prefix):
+
+    $ export PATH="$PATH:~/developer-test"
 
 Then run the program:
 
