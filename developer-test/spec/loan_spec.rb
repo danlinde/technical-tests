@@ -56,12 +56,12 @@ describe Loan do
 		end
 
 		it "should determine the total repayment" do
-			expect(loan.total_repayment).to eq 2453.52
+			expect(loan.total_repayment).to eq 2469.53
 		end
 
 		it "should determine the monthly repayment" do
 			loan.total_repayment
-			expect(loan.monthly_repayment).to eq 68.15
+			expect(loan.monthly_repayment).to eq 68.6
 		end
 	end
 

@@ -43,7 +43,7 @@ class Loan
 	end
 
 	def total_repayment
-		(@amount * ( 1 + self.rate ) ** ( PERIOD / 12 )).round(2)
+		(@amount * ( 1 + self.rate / 12 ) ** PERIOD).round(2)
 	end
 
 	def monthly_repayment
