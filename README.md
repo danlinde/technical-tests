@@ -4,3 +4,4 @@ This repository contains technical tests. Each folder contains a separate test a
 
 ###tests
 - __developer-test:__ a loan calculator
+- __angularjs-test:__ a vocabulary game
