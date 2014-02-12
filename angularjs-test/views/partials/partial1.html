@@ -1,0 +1,14 @@
+<p>Click on the correct answer within the alloted time (10 seconds). A wrong answer ends the game. Get 3 correct answers and you win!</p>
+
+<div id="timer"></div>
+
+<div class="question">
+  <strong>{{answer.en}}</strong>
+  <p>{{answer.def}}</p>
+</div>
+  
+<ul class="">
+  <li ng-repeat="word in words">
+    <button class="answers" ng-click="check(word)">{{word.es}}</button>
+  </li>
+</ul>

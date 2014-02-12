@@ -1,0 +1,14 @@
+[
+    {
+        "player": "Tom", 
+        "score": 3
+    }, 
+    {
+        "player": "Dick", 
+        "score": 2
+    }, 
+    {
+        "player": "Harry", 
+        "score": 1
+    }
+]

@@ -1,0 +1,10 @@
+<p>GAME OVER</p>
+<div>
+  Enter your name to record your score: <input ng-model="player">
+</div>
+<p>{{player}}</p> 
+<button ng-click="setPlayer(player)">Enter</button> 
+
+<ul>
+  <li ng-repeat="highScore in highScores | orderBy:orderProp" class="scores">{{highScore.player}} {{highScore.score}}</li>
+</ul>
